@@ -16,7 +16,7 @@
     </div>
     <div class="counter">
         <h1 id="countNum">0</h1>
-        <p>Range: -10 to 10</p>
+        <p id="range">Range: -10 to 10</p>
     </div>
     <div class="buttons">
         <button id="decrement">-</button>
@@ -28,11 +28,11 @@
         <div class="limitSet">
             <div class="limits">
                 <h2>Minimum value</h2>
-                <input type="number" id="minValue" value="0">
+                <input type="number" id="minValue" value="0" oninput="minValueInput()">
             </div>
             <div class="limits">
                 <h2>Maximum value</h2>
-                <input type="number" id="maxValue" value="10">
+                <input type="number" id="maxValue" value="10" oninput="maxValueInput()">
             </div>
         </div>
         <p>Counter will automatically adjust if it exceeds the new limits</p>
