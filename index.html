@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <h1>Smart Counter</h1>
+        <p>Click to count. Set your limits. Stay on track.</p>
+    </div>
+    <div class="counter">
+        <h1 id="countNum">0</h1>
+        <p>Range: -10 to 10</p>
+    </div>
+    <div class="buttons">
+        <button id="decrement">-</button>
+        <button id="reset">Reset</button>
+        <button id="increment">+</button>
+    </div>
+    <div class="counterLimits">
+        <h1>Set counter limits</h1>
+        <div class="limitSet">
+            <div class="limits">
+                <h2>Minimum value</h2>
+                <input type="number" id="minValue" value="0">
+            </div>
+            <div class="limits">
+                <h2>Maximum value</h2>
+                <input type="number" id="maxValue" value="10">
+            </div>
+        </div>
+        <p>Counter will automatically adjust if it exceeds the new limits</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
